@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meltonpaeg-duprate"
+version = "0.1.0"
+description = "统计整体重复率，并给出重复最集中的来源"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "meltonpaeg" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://meltonpaeg.github.io"
+Repository = "https://github.com/meltonpaeg/duprate"
+Issues = "https://github.com/meltonpaeg/duprate/issues"
+
+[project.scripts]
+duprate = "duprate:main"
+
+[tool.setuptools]
+py-modules = ["duprate"]
